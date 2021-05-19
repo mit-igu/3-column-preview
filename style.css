@@ -1,0 +1,128 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --darker-cyan: hsl(179, 100%, 13%);
+    --lighter-gray: hsl(0, 0%, 95%);
+    --p-white: hsla(0, 0%, 100%, 0.75);
+}
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-size: 0.9375;
+    padding: 20px;
+    min-height: 100vh;
+    background: var(--lighter-gray);
+}
+
+.holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    overflow:hidden;
+}
+
+.area{
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    padding: 40px;
+}
+
+.area-icon{
+    display: block;
+    width: 50px;
+}
+
+.sedans{
+    background-color: var(--bright-orange);
+}
+
+.suvs{
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    background-color: var(--darker-cyan);
+}
+
+h1, h2, h3{
+    color: var(--lighter-gray);
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.area-text{
+    margin-bottom: 30px;
+    line-height: 2em;
+    color: var(--p-white);
+}
+
+.learn{
+    padding: 10px;
+    width: 150px;
+    border-radius: 50px;
+    border: none;
+    mix-blend-mode: screen;
+
+}
+
+.learn:active{
+    border: 2px solid var(--lighter-gray);
+    background-color: transparent;
+    color: var(--lighter-gray);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .holder{
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .area-text{
+        line-height: 1.5em;
+    }
+
+    .learn{
+    position: absolute;
+    bottom: 70px;
+    }
+}
+
