@@ -80,7 +80,10 @@ h1, h2, h3{
     border-radius: 50px;
     border: none;
     mix-blend-mode: screen;
-
+    color: inherit;
+    background-color: var(--lighter-gray);
+    text-align: center;
+    text-decoration: none;
 }
 
 .learn:active{
@@ -114,6 +117,8 @@ h1, h2, h3{
     .holder{
         flex-direction: row;
         max-width: 800px;
+        min-width: 660px;
+        max-height: 500px;
     }
 
     .area-text{
