@@ -1,7 +1,7 @@
 /* - Mobile: 375px
 - Desktop: 1440px */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 :root{
     --bright-orange: hsl(31, 77%, 52%);
@@ -20,7 +20,7 @@
 
 body{
     position: relative;
-    font-size: 0.9375;
+    font-size: 0.9375rem;
     padding: 20px;
     min-height: 100vh;
     background: var(--lighter-gray);
@@ -29,18 +29,24 @@ body{
 .holder{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    align-items: stretch;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 300px;
+    margin: auto;
     border-radius: 10px;
     align-items: center;
     overflow:hidden;
 }
 
 .area{
-    position: relative;
-    width: 100%;
-    min-height: 70vh;
+    /* position: relative; */
+    /* width: 100%; */
+    /* min-height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
     padding: 40px;
 }
 
@@ -62,6 +68,7 @@ body{
 }
 
 h1, h2, h3{
+    font-family: 'Big Shoulders Display', cursive;
     color: var(--lighter-gray);
     font-size: 2em;
     margin-top: 30px;
@@ -69,14 +76,16 @@ h1, h2, h3{
 }
 
 .area-text{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-bottom: 5rem;
     line-height: 2em;
     color: var(--p-white);
 }
 
 .learn{
     padding: 10px;
-    width: 150px;
+    /* width: 150px; */
+    margin-top: auto;
     border-radius: 50px;
     border: none;
     mix-blend-mode: screen;
@@ -84,6 +93,11 @@ h1, h2, h3{
     background-color: var(--lighter-gray);
     text-align: center;
     text-decoration: none;
+}
+
+.learn:hover, .learn:focus{
+    font-weight: bolder;
+    text-shadow: 0px 0px 2px black;
 }
 
 .learn:active{
@@ -116,22 +130,22 @@ h1, h2, h3{
     
     .holder{
         flex-direction: row;
-        max-width: 1000px;
+        max-width: 800px;
         min-width: 660px;
-        max-height: 500px;
+        /* max-height: 500px; */
     }
 
-    .area{
+    /* .area{
         min-width: 300px;
-    }
+    } */
 
     .area-text{
         line-height: 1.5em;
     }
 
-    .learn{
+    /* .learn{
     position: absolute;
     bottom: 70px;
-    }
+    } */
 }
 
